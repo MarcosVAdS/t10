@@ -11,7 +11,7 @@ Api desenvolvida pra o processo seletivo do t10
 ###2. Mude para a pasta do ambiente virtual criado e ative-o com:
 ```source bin/activate```
 ou
-```Scripts\activate````
+```Scripts\activate```
 para sistemas Windows
 
 ###3. Baixe os arquivos do git dentro do ambiente virtual com:
@@ -21,7 +21,7 @@ para sistemas Windows
 ```pip install -r requiremensts.txt```
 
 ###5. Faça as migrations do banco com:
-```python manage.py migrate````
+```python manage.py migrate```
 
 ###6. Inicie o Servidor django:
 ```python manage.py runserver```
