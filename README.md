@@ -6,7 +6,7 @@ Api desenvolvida pra o processo seletivo do t10
 ##Para utilizar a Api, siga os passos abaixo:
 
 ###1. Crie um ambiente virtual python com o comando:
-```python3 -m venv t10challenge````
+```python3 -m venv t10challenge```
 
 ###2. Mude para a pasta do ambiente virtual criado e ative-o com:
 ```source bin/activate```
