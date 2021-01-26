@@ -1,11 +1,11 @@
 from django.db import models
+from django.contrib.auth.models import User
+from partner.models import Partner
 
-# Create your models here.
 class Debit(models.Model):
-    #create_by = models.ForeignKey('auth.User', related_name='debit' )
-    requester = models.CharField(max_length=244)
+    requester = models.ForeignKey(User, on_delete=models.CASCADE)
     value = models.BigIntegerField(default=0)
-    target = models.CharField(max_length=14) ##should receive cnpj'
+    target = models.ForeignKey(Partner, on_delete=models.CASCADE)
     is_enable =  models.BooleanField()
     status = models.CharField(max_length=50)
     created_at = models.DateTimeField(auto_now_add=True)

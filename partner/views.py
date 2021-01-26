@@ -4,7 +4,6 @@ from partner.serializers import PartnerSerializer
 from rest_framework import viewsets, permissions
 from .models import Partner
 
-# Create your views here.
 @csrf_exempt
 def listPartners(request):
     if request.method == 'GET':
