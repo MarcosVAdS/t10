@@ -7,7 +7,7 @@ SECRET_KEY = '*$=jmui^2_jppq*tm95_#2!!ke%qp&)d4mvubt0q3n7_h(w8!v'
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['eb-django-app-dev.elasticbeanstalk.com', '127.0.0.1']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -95,7 +95,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 REST_FRAMEWORK = { 
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ) 
 }
